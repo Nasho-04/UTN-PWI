@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    height: 100vh;
+    background-color: green;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: salmon;
+    border: 1px solid black;
+}
