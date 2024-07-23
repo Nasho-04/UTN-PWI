@@ -1,13 +1,14 @@
 
 import React from 'react'
 import ColorPalette from '../ColorPalette/ColorPalette'
+import "./ColorPaletteList.css"
 
-const ColorPaletteList = (props) => {
+const ColorPaletteList = ( props ) => {
   return (
     <div className='card-container'>
-      {props.card.map((card) => {
+      {props.card.map((carta) => {
         return (
-          <ColorPalette colors={card.color} likes={card.likes} fecha={card.fecha}/>
+          <ColorPalette colores={carta.colors} likes={carta.likes} time={carta.time} key={props.id}/>
         )
       })
       }
